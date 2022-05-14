@@ -1,0 +1,104 @@
+#main {
+    margin-top: 20vh;
+}
+
+#main-title {
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 0;
+}
+
+#main-title-para {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+#main-grid {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.card {
+    display: block;
+    height: 700px;
+    background-color: #040c21;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card-title {
+    font-size: 4vw;
+    text-align: center;
+}
+
+#card-one {
+    background-image: url(Pictures/car-detailing-costs-.jpg);
+    background-size: 1055px;
+    background-position: -500px;
+}
+
+#card-two {
+    background-image: url(Pictures/81X64J1JS9L._AC_SL1500_.jpg);
+    background-size: 1050px;
+    background-position: -600px;
+}
+
+#card-three {
+    background-image: url(Pictures/clean-car-vacuum-today-170814-tease.jpg);
+    background-size: 1250px;
+    background-position: -500px;
+}
+
+@media (min-width: 1000px) {
+    #main-grid {
+        grid-auto-flow: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    #card-one {
+        background-image: url(Pictures/car-detailing-costs-.jpg);
+        background-size: 1500px;
+    }
+
+    #card-two {
+        background-image: url(Pictures/soapy-car.jpg);
+        background-size: 1500px;
+        background-position: -400px;
+    }
+
+    #card-three {
+        background-image: url(Pictures/clean-car-vacuum-today-170814-tease.jpg);
+        background-size: 1350px;
+        background-position: -500px;
+    }
+}
+
+@media (max-width: 640px) {
+    .card-title {
+        font-size: 10vw;
+    }
+
+    #card-one {
+        background-image: url(Pictures/car-detailing-costs-.jpg);
+        background-size: 1500px;
+        background-position: -3800px;
+    }
+
+    #card-two {
+        background-image: url(Pictures/soapy-car.jpg);
+        background-size: 1100px;
+        background-position: -400px;
+    }
+
+    #card-three {
+        background-image: url(Pictures/clean-car-vacuum-today-170814-tease.jpg);
+        background-size: 1350px;
+        background-position: -600px;
+    }
+}
